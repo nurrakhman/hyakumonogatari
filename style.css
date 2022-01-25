@@ -1,10 +1,21 @@
-body{
-    background: url(bg.jfif) no-repeat center center fixed;
-    background-size: cover; 
-}
-
 *{
   margin: 0;
+}
+
+@font-face {
+  font-family: fontHorror;
+  src: url(minamoji04.ttf);
+}
+
+p, h1{
+  font-family: fontHorror;
+  font-size: 25px;
+  color: white;
+}
+
+body{
+  background: url(bg.jfif) no-repeat center center fixed;
+  background-size: cover; 
 }
 
 .main{
@@ -19,28 +30,82 @@ body{
   justify-content: center;
   align-items: center;
   width: 100%;
-  flex-basis: 230px; 
+  flex-basis: 180px; 
   /* height: 230px; */
   background: linear-gradient(180deg, rgb(0, 0, 0), rgba(0, 0, 0), rgba(0, 0, 0),rgba(0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 .content{
   display: flex;
-  /* background: blanchedalmond; */
-  /* height: 608px; */
+  justify-content: center;
+  align-items: center;
   flex-basis: 600px;
+  height: 700px;
   
+}
+
+.card-story{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  border-radius: 15px;
+  gap: 20px;
+  width: 70%;
+  height: 80%;
+  background: linear-gradient(180deg, rgb(0, 0, 0, 0.7), rgba(0, 0, 0,0.6), rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 }
 
 .footer{
   display: flex;
-  background: blue;
+  justify-content: center;
+  align-items: center;
+  color: white;
   height: 100px;
   background: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0), rgba(0, 0, 0),rgba(0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 .main-logo{
-    width: 400px;
+    width: 350px;
     
 }
 
+.nextBtn > button{
+  height: 55px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.nextBtn > button:hover{
+  height: 55px;
+  background-color: rgb(70, 0, 0);
+  border-radius: 5px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.nextBtn > button:active{
+  height: 55px;
+  background-color: rgb(102, 0, 0);
+  border-radius: 5px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.remaining{
+  padding-top: 20px;
+}
+
+.story{
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto ;
+}
+
+.redColor{
+  color: red;
+}
